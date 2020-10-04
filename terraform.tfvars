@@ -1,0 +1,17 @@
+vpc_cidr = "10.0.0.0/16"
+cidrs = {
+  public1  = "10.0.1.0/24"
+  public2  = "10.0.2.0/24"
+  private1 = "10.0.3.0/24"
+  private2 = "10.0.4.0/24"
+}
+localip           = "18.191.104.143/32"
+key_name          = "web-ec2"
+public_key_path   = "/home/ec2-user/.ssh/id_rsa.pub"
+web_instance_type = "t2.micro"
+bastion_instance_type = "t2.micro"
+db_instance_type = "db.t2.micro"
+db_username = "admin"
+db_password = "admin1234"
+dev_ami = "ami-09a5b0b7edf08843d"
+userdatascript = "httpd-setup.sh"
